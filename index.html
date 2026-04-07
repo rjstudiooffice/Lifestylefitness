@@ -5,43 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeStyle BestFitness</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#locations">Locations</a></li>
-            <li><a href="#trial">Trial Training</a></li>
-        </ul>
-    </nav>
-    <header id="home">
-        <h1>Welcome to LifeStyle BestFitness</h1>
-        <p>Your journey to fitness starts here!</p>
+    <header>
+        <nav>
+            <h1>LifeStyle BestFitness</h1>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#trial-form">Trial Training</a></li>
+            </ul>
+        </nav>
     </header>
+    <section id="hero">
+        <h2>Welcome to Your Fitness Journey</h2>
+        <p>Join us to achieve your best self!</p>
+        <a href="#trial-form" class="btn">Get Started</a>
+    </section>
     <section id="services">
         <h2>Our Services</h2>
-        <p>We offer a range of services including personal training, group classes, and nutritional advice.</p>
+        <div class="service-item">
+            <h3>Personal Training</h3>
+            <p>One-on-one training sessions tailored to your needs.</p>
+        </div>
+        <div class="service-item">
+            <h3>Group Classes</h3>
+            <p>Engaging classes that motivate you to keep fit.</p>
+        </div>
+        <div class="service-item">
+            <h3>Nutritional Counseling</h3>
+            <p>Get the best dietary advice for your fitness goals.</p>
+        </div>
     </section>
     <section id="courses">
         <h2>Our Courses</h2>
-        <p>Explore our variety of courses designed for all levels.</p>
+        <div class="course-item">
+            <h3>Yoga</h3>
+            <p>Improve your flexibility and mental focus.</p>
+        </div>
+        <div class="course-item">
+            <h3>HIIT</h3>
+            <p>High-intensity interval training for rapid results.</p>
+        </div>
+        <div class="course-item">
+            <h3>Weightlifting</h3>
+            <p>Build strength with our expert-led sessions.</p>
+        </div>
     </section>
     <section id="locations">
         <h2>Our Locations</h2>
-        <p>Find a gym near you.</p>
+        <p>Find us in multiple cities for your convenience.</p>
     </section>
-    <section id="trial">
+    <section id="trial-form">
         <h2>Trial Training Form</h2>
-        <form action="#" method="post">
+        <form id="form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <input type="submit" value="Sign Up for a Trial">
+            <input type="email" id="email" required>
+            <label for="location">Preferred Location:</label>
+            <select id="location">
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </section>
     <footer>
